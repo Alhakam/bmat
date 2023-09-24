@@ -1,0 +1,720 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/bmat#"
+     xml:base="https://w3id.org/bmat"
+     xmlns:dc1="http://purl.org/dc/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:schema="http://schema.org/#">
+    <owl:Ontology rdf:about="https://w3id.org/bmat">
+        <owl:versionIRI rdf:resource="https://w3id.org/bmat/0.2"/>
+        <dc1:termscreator>
+            <rdf:Description rdf:nodeID="genid1">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name>Al-Hakam Hamdan</foaf:name>
+            </rdf:Description>
+        </dc1:termscreator>
+        <dc1:termscreator>
+            <rdf:Description rdf:nodeID="genid2">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name>Taras Kozak</foaf:name>
+            </rdf:Description>
+        </dc1:termscreator>
+        <dc1:termscreator>
+            <rdf:Description rdf:nodeID="genid3">
+                <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+                <foaf:name>Mushtak K. Seeaed</foaf:name>
+            </rdf:Description>
+        </dc1:termscreator>
+        <dc1:termsdescription xml:lang="en">Ontology for defining building materials</dc1:termsdescription>
+        <dc1:termslicense>https://creativecommons.org/licenses/by/1.0</dc1:termslicense>
+        <dc1:termsmodified>28th May 2019</dc1:termsmodified>
+        <dc1:termstitle xml:lang="en">Building Material</dc1:termstitle>
+        <vann:preferredNamespacePrefix>bmat</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/bmat#</vann:preferredNamespaceUri>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://schema.org/#domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/#domainIncludes"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+
+    <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/bmat#hasBuildingMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bmat#hasBuildingMaterial">
+        <rdfs:range rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/brot#aggregates"/>
+            <rdf:Description rdf:about="https://w3id.org/bmat#hasBuildingMaterial"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/brot#containsComponent"/>
+            <rdf:Description rdf:about="https://w3id.org/bmat#hasBuildingMaterial"/>
+        </owl:propertyChainAxiom>
+        <rdfs:comment xml:lang="en">Relationship between a construction component and a BuildingMaterial.</rdfs:comment>
+        <rdfs:label xml:lang="en">has building material</rdfs:label>
+        <rdfs:label xml:lang="de">hat Baumaterial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#hasGroutingMaterial -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bmat#hasGroutingMaterial">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#hasBuildingMaterial"/>
+        <rdfs:domain rdf:resource="https://w3id.org/brcomp#Tendon"/>
+        <rdfs:range rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="en">Relationship between a Tendon component and a BuildingMaterial that is used as grouting material.</rdfs:comment>
+        <rdfs:label xml:lang="en">has grouting material</rdfs:label>
+        <rdfs:label xml:lang="de">hat Verpressungsmaterial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/brot#aggregates -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/brot#aggregates"/>
+    
+
+
+    <!-- https://w3id.org/brot#containsComponent -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/brot#containsComponent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/bmat#cementContent -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#cementContent">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="de">DATENTYP DES EINGABEWERTES:
+
+xsd:double [Wasser/Zement]
+
+Einheit in [kg/m³]</rdfs:comment>
+        <rdfs:comment xml:lang="en">TYPE INPUT VALUE: 
+
+xsd:double [watter/cement]
+
+Unit: [kg/m³]</rdfs:comment>
+        <rdfs:label xml:lang="en">Cement content</rdfs:label>
+        <rdfs:label xml:lang="de">Zementgehalt</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#cementDesignation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#cementDesignation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Cements according to DIN EN 197-1 are marked by the following information:
+
+- the main type of cement and the standard designation,
+- the abbreviation of the cement type,
+- the strength class 32.5, 42.5 or 52.5
+- the initial strength: N (usual initial strength), R (high initial strength) or L (low initial strength), valid only for CEM III cements and
+- a number or two freely selectable lower-case letters in brackets, provided that a manufacturer produces different cements with the same standard designation in a single plant in order to distinguish them from each other (see example).
+
+
+Normal cements with low hydration heat are additionally marked LH, normal cements with high sulphate resistance SR. For CEM I with high sulphate resistance, the C3A content in the clinker must also be indicated.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cement designation</rdfs:label>
+        <rdfs:label xml:lang="de">Zementbezeichnung</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#cementMainConstituents -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#cementMainConstituents">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="de">(Klassifizierung erfolgt gemaess DIN EN 197-1.)
+
+WERTEVERZEICHNIS:
+
+K - Portlandzementklinker
+S - Huettensand (granulierte Hochofenschlacke)
+P - Natuerliches Puzzolan
+Q - Natuerliches getempertes Puzzolan
+V - Kieselsaeurereiche Flugasche
+W - Kalkreiche Flugasche
+T - Gebrannter Schiefer
+LL - Kalkstein (darf einen Massenanteil von 0,20 % nicht ueberschreiten)
+L - Kalkstein (darf einen Massenanteil von 0,50 % nicht ueberschreiten)
+D - Silicastaub</rdfs:comment>
+        <rdfs:comment xml:lang="en">ENUMERATION VALUES:
+
+(Classification according to DIN EN 197-1)
+
+K - Portland cement clinker
+S - Granulated blastfurnace slag
+P - Natural pozzolana
+Q - Natural calcined pozzolana
+V - Siliceous fly ash
+W - Calcareous fly ash
+T - Burnt shale
+LL- Limestone (shall not exceed 0,20 % by mass)
+L- Limestone (shall not exceed 0,50 % by mass)
+D - Silica fume</rdfs:comment>
+        <rdfs:label xml:lang="de">Hauptbestandteile vom Zement</rdfs:label>
+        <rdfs:label xml:lang="en">Main constituents of the cement</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#cementType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#cementType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="en">(Classification is according to DIN EN 197-1.)
+
+ENUMERATION VALUES:
+
+CEM_I - Portland cement
+CEM_II - Portland-composite cement
+CEM_III - Blastfurnace cement
+CEM_IV - Pozzolanic cement
+CEM_V - Composite cement</rdfs:comment>
+        <rdfs:comment xml:lang="de">(Klassifizierung erfolgt gemaess DIN EN 197-1.)
+
+WERTEVERZEICHNIS:
+
+CEM_I - Portlandzemente
+CEM_II - Portlandkompositzemente
+CEM_III - Hochofenzemente
+CEM_IV - Puzzolanzemente
+CEM_V - Kompositzemente</rdfs:comment>
+        <rdfs:label xml:lang="en">Cement type</rdfs:label>
+        <rdfs:label xml:lang="de">Zementart</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#coatDesignation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#coatDesignation">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Standardized designation of the coating used on a component.</rdfs:comment>
+        <rdfs:label xml:lang="de">Beschichtungsbezeichnung</rdfs:label>
+        <rdfs:label xml:lang="en">Coat designation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#concreteAdmixture -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#concreteAdmixture">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="en">Powdery or liquid additives which influence certain properties of the concrete. They may only be added to the concrete if they do not affect the hardening of the cement, the strength and durability of the concrete and the corrosion protection of the reinforcement. In contrast to concrete admixtures, they must be considered as volume components when preparing the concrete recipe. Aggregates are not counted as concrete admixtures.</rdfs:comment>
+        <rdfs:label xml:lang="de">Betonzusatzstoffe</rdfs:label>
+        <rdfs:label xml:lang="en">Concrete admixture</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#concreteAggregate -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#concreteAggregate">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="en">Mixture of unbroken and/or broken grains of natural and/or artificial mineral substances.</rdfs:comment>
+        <rdfs:label xml:lang="de">Zuschlagstoff</rdfs:label>
+        <rdfs:label xml:lang="en">concrete aggregate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#concreteAttribute -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#concreteAttribute">
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#Concrete"/>
+        <rdfs:comment xml:lang="en">Attribute that specifies Concrete.</rdfs:comment>
+        <rdfs:label xml:lang="en">concrete attribute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#concreteStrengthClass -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#concreteStrengthClass">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="en">Concrete can be classified according to its compressive strength.
+
+For the classification, the characteristic strength of cylinders with a diameter of 150 mm and a length of 300 mm (fck,cyl) or of cubes with an edge length of 150 mm (fck,cube) at the test age of 28 days is used.
+
+In principle, the compressive strength for determining the characteristic strength and assigning the strength class according to DIN EN 206-1/DIN 1045-2 shall be demonstrated on test specimens at the age of 28 days.</rdfs:comment>
+        <rdfs:label xml:lang="en">Class of compression strength of the concrete</rdfs:label>
+        <rdfs:label xml:lang="de">Druckfestigkeitsklasse des Betons</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#expositionClassConcrete -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#expositionClassConcrete">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="en">In order to ensure sufficient durability, concrete components must be sufficiently resistant to chemical and physical influences from their environment and use. The impacts from the various environmental conditions are classified in exposure classes which can act on the concrete, the reinforcing steel or metallic components and which are not considered as loads in the structural design. This results in the requirements for the composition of the concrete to be used, as well as the concrete covering and the permissible crack width.
+
+The designations of the individual exposure classes are composed of the letter X (for exposure), the identification for the type of damaging influence and a number indicating the intensity of the damaging influences. The following abbreviations are used for the different types of actions:
+
+0 for Zero Risk 
+C for carbonation
+D for Deicing Salt 
+S for Seawater 
+F for frost 
+A for Chemical Attack
+M for Mechanical Abrasion</rdfs:comment>
+        <rdfs:label xml:lang="en">Exposition class of concrete</rdfs:label>
+        <rdfs:label xml:lang="de">Expositionsklasse fuer Beton</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#expositionClassReinforcement -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#expositionClassReinforcement">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#reinforcementAttribute"/>
+        <rdfs:comment xml:lang="en">Exposure class for occurring reinforcement corrosion (XC) caused by carbonation
+
+XC1: Dry or permanently wet - indoor components with normal humidity (kitchen, bathroom in residential buildings, etc.)
+
+XC2: Wet, rarely dry - parts of water tanks, foundation components
+
+XC3: Moderate humidity - components with frequent or constant contact with the outside air (open halls), interiors with high humidity (commercial kitchens, bathrooms, laundries), in humid rooms of indoor swimming pools and livestock stables.
+
+XC4: alternating wet and dry - exterior components with direct irrigation, components in water change zones</rdfs:comment>
+        <rdfs:label xml:lang="en">Exposition class of reinforcement corrosion</rdfs:label>
+        <rdfs:label xml:lang="de">Expositionsklasse fuer Bewehrungskorrosion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#grainSize -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#grainSize">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="en">ENUMERATION VALUES:
+
+(Classification according to DIN EN 12620)
+
+COARSE
+FINE
+NAT_COMP_AGGR - (natural composite agregate 0/8)
+GRAIN_MIXTURE</rdfs:comment>
+        <rdfs:comment xml:lang="de">WERTEVERZEICHNIS:
+
+(Definition nach DIN EN 12620)
+
+GROB 
+FEIN
+ZSMMNGSTZT_GESTEINSKOE - (natuerlich zusammengesetzte Gesteinskoernung 0/8)
+KORNGEMISCH</rdfs:comment>
+        <rdfs:label xml:lang="en">Grain size distribution of the beton aggregate</rdfs:label>
+        <rdfs:label xml:lang="de">Korngroesseverteilung von Gesteinskoernungen fuer Beton</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#materialAge -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#materialAge">
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="de">Gibt das Jahr an, in dem das Material verbaut wurde.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the year in which the material was installed.</rdfs:comment>
+        <rdfs:label xml:lang="de">Materialalter</rdfs:label>
+        <rdfs:label xml:lang="en">material age</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#materialStandard -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#materialStandard">
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="de">Gibt die Norm an, die zum Zeitpunkt des Materialeinbaus befolgt wurde.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies the standard followed at the time of material installation.</rdfs:comment>
+        <rdfs:label xml:lang="de">MaterialNorm</rdfs:label>
+        <rdfs:label xml:lang="en">material standard</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#moistureClassConcrete -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#moistureClassConcrete">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#concreteAttribute"/>
+        <rdfs:comment xml:lang="en">The moisture class is a classification of the environmental conditions, which the engineer must always determine according to properties and standard concrete with regard to a possible damaging alkali-silica reaction in concrete.</rdfs:comment>
+        <rdfs:label xml:lang="de">Feuchtigkeitsklasse fuer Betonkorrosion</rdfs:label>
+        <rdfs:label xml:lang="en">Moisture class of beton corrosion</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#naturalStoneAttribute -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#naturalStoneAttribute">
+        <rdfs:domain rdf:resource="https://w3id.org/bmat#NaturalStone"/>
+        <rdfs:comment xml:lang="en">Attribute that specifies NaturalStone.</rdfs:comment>
+        <rdfs:label xml:lang="en">natural stone attribute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#reinforcementAttribute -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#reinforcementAttribute">
+        <schema:domainIncludes rdf:resource="https://w3id.org/bmat#ReinforcedConcrete"/>
+        <schema:domainIncludes rdf:resource="https://w3id.org/bmat#ReinforcementSteel"/>
+        <rdfs:comment xml:lang="en">Attribute that specifies Reinforcement aggregated in ReinforcedConcrete.</rdfs:comment>
+        <rdfs:label xml:lang="en">reinforcement attribute</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#reinforcementBreakingStrength -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#reinforcementBreakingStrength">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#reinforcementAttribute"/>
+        <rdfs:comment xml:lang="de">DATENTYP DES EINGABEWERTES:
+
+xsd:double [N/mm2]</rdfs:comment>
+        <rdfs:comment xml:lang="en">TYPE INPUT VALUE:
+
+xsd:double [N/mm2]</rdfs:comment>
+        <rdfs:label xml:lang="en">Breaking strength of reinforcing steel</rdfs:label>
+        <rdfs:label xml:lang="de">Bruchgrenze des Bewehrungsstahls</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#reinforcementGrade -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#reinforcementGrade">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#reinforcementAttribute"/>
+        <rdfs:comment xml:lang="en">Reinforcement grade based on the tensile strength of the reinforcement.</rdfs:comment>
+        <rdfs:label xml:lang="de">Bewehrungsklasse</rdfs:label>
+        <rdfs:label xml:lang="en">Reinforcement grade</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#reinforcementYieldStrength -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#reinforcementYieldStrength">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#reinforcementAttribute"/>
+        <rdfs:comment xml:lang="de">DATENTYP DES EINGABEWERTES:
+
+xsd:double [N/mm2]</rdfs:comment>
+        <rdfs:comment xml:lang="en">TYPE INPUT VALUE:
+
+xsd:double [N/mm2]</rdfs:comment>
+        <rdfs:label xml:lang="de">Streckgrenze des Bewehrungsstahls</rdfs:label>
+        <rdfs:label xml:lang="en">Yield strength of reinforcing steel</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#stoneAbrasionResistance -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#stoneAbrasionResistance">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#naturalStoneAttribute"/>
+        <rdfs:comment xml:lang="en">Abrasion resistance refers to the ability of materials and structures to withstand abrasion. It is a method of wearing down or rubbing away by means of friction.
+
+Unit in [(cm^3)/(50 cm^2)]</rdfs:comment>
+        <rdfs:comment xml:lang="de">Abriebfestigkeit bezieht sich auf die Fähigkeit von Materialien und Strukturen, Abrieb zu widerstehen. Es ist eine Methode des Abnutzens oder Abreibens durch Reibung.
+
+Einheit in [(cm^3)/(50 cm^2)]</rdfs:comment>
+        <rdfs:label xml:lang="en">Abrasion resistance</rdfs:label>
+        <rdfs:label xml:lang="de">Abriebfestigkeit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#stoneCompressiveStrength -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#stoneCompressiveStrength">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#naturalStoneAttribute"/>
+        <rdfs:comment xml:lang="en">Compressive strength is the capacity of a material or structure to withstand loads tending to reduce size.
+
+Unit in [N/mm^2]</rdfs:comment>
+        <rdfs:comment xml:lang="de">Die Druckfestigkeit ist die Fähigkeit eines Materials oder einer Struktur, Belastungen zu widerstehen, die dazu neigen, die Größe zu verringern.
+
+Einheit in [N/mm^2]</rdfs:comment>
+        <rdfs:label xml:lang="en">Compressive strength</rdfs:label>
+        <rdfs:label xml:lang="de">Druckfestigkeit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#stoneDensity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#stoneDensity">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#naturalStoneAttribute"/>
+        <rdfs:comment xml:lang="de">Die Rohdichte, auch scheinbare oder geometrische Dichte oder Raumgewicht genannt, ist die Dichte eines porösen Festkörpers basierend auf dem Volumen einschließlich der Porenräume.
+
+Einheit in [kg/dm^3]</rdfs:comment>
+        <rdfs:comment xml:lang="en">The bulk density, also called apparent or geometric density or density, is the density of a porous solid based on the volume including the pore spaces.
+
+Unit in [kg/dm^3]</rdfs:comment>
+        <rdfs:label xml:lang="en">Density</rdfs:label>
+        <rdfs:label xml:lang="de">Rohdichte</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#stoneFlexuralStrength -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#stoneFlexuralStrength">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#naturalStoneAttribute"/>
+        <rdfs:comment xml:lang="de">Die Biegefestigkeit ist eine Materialeigenschaft, definiert als die Spannung in einem Material, kurz bevor es in einem Biegetest nachgibt.
+
+Einheit in [N/mm^2]</rdfs:comment>
+        <rdfs:comment xml:lang="en">Flexural strength is a material property, defined as the stress in a material just before it yields in a flexure test.
+
+Unit in [N/mm^2]</rdfs:comment>
+        <rdfs:label xml:lang="de">Biegezugfestigkeit</rdfs:label>
+        <rdfs:label xml:lang="en">Flexural strength</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#stoneType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#stoneType">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#naturalStoneAttribute"/>
+        <rdfs:comment xml:lang="en">Natural stone types:
+
+Sandstone
+Limestone
+Granite
+Quarzit
+Gneiss</rdfs:comment>
+        <rdfs:comment xml:lang="de">Natursteinarten:
+
+Sandstein
+Kalkstein
+Granit
+Quarzit
+Gneis</rdfs:comment>
+        <rdfs:label xml:lang="de">Steinart</rdfs:label>
+        <rdfs:label xml:lang="en">Stone type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bmat#stoneWaterAbsorption -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bmat#stoneWaterAbsorption">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/bmat#naturalStoneAttribute"/>
+        <rdfs:comment xml:lang="de">Die Wasserabsorptionsrate ist eine Gewichtsänderung aufgrund von absorbiertem Wasser.
+
+Einheit in [(cm^3)/(50cm^2)]</rdfs:comment>
+        <rdfs:comment xml:lang="en">Water absorption rate is change in weight due to absorbed water.
+
+Unit in [(cm^3)/(50cm^2)]</rdfs:comment>
+        <rdfs:label xml:lang="de">Wasseraufnahme</rdfs:label>
+        <rdfs:label xml:lang="en">Water Absorption</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+    
+
+
+    <!-- https://w3id.org/bmat#Aluminium -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bmat#Aluminium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="en">Building material that mainly consists of the chemical element Aluminium (AL, 13)</rdfs:comment>
+        <rdfs:label xml:lang="en">Aluminium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#BuildingMaterial -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bmat#BuildingMaterial">
+        <rdfs:comment xml:lang="en">Material of which construction components or building Components are made of.</rdfs:comment>
+        <rdfs:label xml:lang="en">Building material</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#Concrete -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bmat#Concrete">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="en">Building material which is mixed as a dispersion with the addition of liquid from a binder and aggregates. Concrete contains cement as binder and granules as aggregate. The admixture water initiates the chemical setting process, i.e. hardening.  In order to influence the workability and other properties of the concrete, concrete additives and concrete admixtures are added to the mixture.</rdfs:comment>
+        <rdfs:label xml:lang="en">Concrete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#Mortar -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bmat#Mortar">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="en">Material used to fill the gaps between blocks and bind them together.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mortar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#NaturalStone -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bmat#NaturalStone">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="en">Building material made of stone, as found in nature, as long as it is regarded or acquired as an economic good.</rdfs:comment>
+        <rdfs:label xml:lang="en">Natural stone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#ReinforcedConcrete -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bmat#ReinforcedConcrete">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#Concrete"/>
+        <rdfs:comment xml:lang="en">Concrete which aggregates reinforcing Components (preferentially reinforcement steel) for enhanced tensile strength.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reinforced concrete</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bmat#ReinforecementSteel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/bmat#ReinforecementSteel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bmat#BuildingMaterial"/>
+        <rdfs:comment xml:lang="en">Construction material that serves as reinforcement for reinforced concrete components. Is poured with concrete after installation in the formwork.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reinforcement steel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/brcomp#Tendon -->
+
+
+    <owl:Class rdf:about="https://w3id.org/brcomp#Tendon"/>
+    <rdf:Description rdf:nodeID="genid8">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Al-Hakam Hamdan</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Taras Kozak</foaf:name>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <foaf:name>Mushtak K. Seeaed</foaf:name>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

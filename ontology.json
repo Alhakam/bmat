@@ -1,0 +1,721 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Al-Hakam Hamdan"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Mushtak K. Seeaed"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Taras Kozak"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Mushtak K. Seeaed"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Al-Hakam Hamdan"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://xmlns.com/foaf/0.1/Person" ],
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Taras Kozak"
+  } ]
+}, {
+  "@id" : "http://schema.org/#domainIncludes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/bmat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/termscreator" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://purl.org/dc/termsdescription" : [ {
+    "@language" : "en",
+    "@value" : "Ontology for defining building materials"
+  } ],
+  "http://purl.org/dc/termslicense" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/1.0"
+  } ],
+  "http://purl.org/dc/termsmodified" : [ {
+    "@value" : "28th May 2019"
+  } ],
+  "http://purl.org/dc/termstitle" : [ {
+    "@language" : "en",
+    "@value" : "Building Material"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "bmat"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/bmat#"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/bmat/0.2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#Aluminium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Building material that mainly consists of the chemical element Aluminium (AL, 13)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aluminium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#BuildingMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Material of which construction components or building Components are made of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Building material"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#Concrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Building material which is mixed as a dispersion with the addition of liquid from a binder and aggregates. Concrete contains cement as binder and granules as aggregate. The admixture water initiates the chemical setting process, i.e. hardening.  In order to influence the workability and other properties of the concrete, concrete additives and concrete admixtures are added to the mixture."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Concrete"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#Mortar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Material used to fill the gaps between blocks and bind them together."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mortar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#NaturalStone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Building material made of stone, as found in nature, as long as it is regarded or acquired as an economic good."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Natural stone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#ReinforcedConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concrete which aggregates reinforcing Components (preferentially reinforcement steel) for enhanced tensile strength."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reinforced concrete"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  }, {
+    "@id" : "https://w3id.org/bmat#Concrete"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#ReinforecementSteel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Construction material that serves as reinforcement for reinforced concrete components. Is poured with concrete after installation in the formwork."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcement steel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#cementContent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "DATENTYP DES EINGABEWERTES:\n\nxsd:double [Wasser/Zement]\n\nEinheit in [kg/m³]"
+  }, {
+    "@language" : "en",
+    "@value" : "TYPE INPUT VALUE: \n\nxsd:double [watter/cement]\n\nUnit: [kg/m³]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cement content"
+  }, {
+    "@language" : "de",
+    "@value" : "Zementgehalt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#cementDesignation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Cements according to DIN EN 197-1 are marked by the following information:\n\n- the main type of cement and the standard designation,\n- the abbreviation of the cement type,\n- the strength class 32.5, 42.5 or 52.5\n- the initial strength: N (usual initial strength), R (high initial strength) or L (low initial strength), valid only for CEM III cements and\n- a number or two freely selectable lower-case letters in brackets, provided that a manufacturer produces different cements with the same standard designation in a single plant in order to distinguish them from each other (see example).\n\n\nNormal cements with low hydration heat are additionally marked LH, normal cements with high sulphate resistance SR. For CEM I with high sulphate resistance, the C3A content in the clinker must also be indicated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cement designation"
+  }, {
+    "@language" : "de",
+    "@value" : "Zementbezeichnung"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#cementMainConstituents",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "(Klassifizierung erfolgt gemaess DIN EN 197-1.)\n\nWERTEVERZEICHNIS:\n\nK - Portlandzementklinker\nS - Huettensand (granulierte Hochofenschlacke)\nP - Natuerliches Puzzolan\nQ - Natuerliches getempertes Puzzolan\nV - Kieselsaeurereiche Flugasche\nW - Kalkreiche Flugasche\nT - Gebrannter Schiefer\nLL - Kalkstein (darf einen Massenanteil von 0,20 % nicht ueberschreiten)\nL - Kalkstein (darf einen Massenanteil von 0,50 % nicht ueberschreiten)\nD - Silicastaub"
+  }, {
+    "@language" : "en",
+    "@value" : "ENUMERATION VALUES:\n\n(Classification according to DIN EN 197-1)\n\nK - Portland cement clinker\nS - Granulated blastfurnace slag\nP - Natural pozzolana\nQ - Natural calcined pozzolana\nV - Siliceous fly ash\nW - Calcareous fly ash\nT - Burnt shale\nLL- Limestone (shall not exceed 0,20 % by mass)\nL- Limestone (shall not exceed 0,50 % by mass)\nD - Silica fume"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Hauptbestandteile vom Zement"
+  }, {
+    "@language" : "en",
+    "@value" : "Main constituents of the cement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#cementType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "(Classification is according to DIN EN 197-1.)\n\nENUMERATION VALUES:\n\nCEM_I - Portland cement\nCEM_II - Portland-composite cement\nCEM_III - Blastfurnace cement\nCEM_IV - Pozzolanic cement\nCEM_V - Composite cement"
+  }, {
+    "@language" : "de",
+    "@value" : "(Klassifizierung erfolgt gemaess DIN EN 197-1.)\n\nWERTEVERZEICHNIS:\n\nCEM_I - Portlandzemente\nCEM_II - Portlandkompositzemente\nCEM_III - Hochofenzemente\nCEM_IV - Puzzolanzemente\nCEM_V - Kompositzemente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cement type"
+  }, {
+    "@language" : "de",
+    "@value" : "Zementart"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#coatDesignation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Standardized designation of the coating used on a component."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Beschichtungsbezeichnung"
+  }, {
+    "@language" : "en",
+    "@value" : "Coat designation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#concreteAdmixture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Powdery or liquid additives which influence certain properties of the concrete. They may only be added to the concrete if they do not affect the hardening of the cement, the strength and durability of the concrete and the corrosion protection of the reinforcement. In contrast to concrete admixtures, they must be considered as volume components when preparing the concrete recipe. Aggregates are not counted as concrete admixtures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Betonzusatzstoffe"
+  }, {
+    "@language" : "en",
+    "@value" : "Concrete admixture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#concreteAggregate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Mixture of unbroken and/or broken grains of natural and/or artificial mineral substances."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Zuschlagstoff"
+  }, {
+    "@language" : "en",
+    "@value" : "concrete aggregate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#concreteAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Attribute that specifies Concrete."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bmat#Concrete"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "concrete attribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#concreteStrengthClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concrete can be classified according to its compressive strength.\n\nFor the classification, the characteristic strength of cylinders with a diameter of 150 mm and a length of 300 mm (fck,cyl) or of cubes with an edge length of 150 mm (fck,cube) at the test age of 28 days is used.\n\nIn principle, the compressive strength for determining the characteristic strength and assigning the strength class according to DIN EN 206-1/DIN 1045-2 shall be demonstrated on test specimens at the age of 28 days."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Class of compression strength of the concrete"
+  }, {
+    "@language" : "de",
+    "@value" : "Druckfestigkeitsklasse des Betons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#expositionClassConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In order to ensure sufficient durability, concrete components must be sufficiently resistant to chemical and physical influences from their environment and use. The impacts from the various environmental conditions are classified in exposure classes which can act on the concrete, the reinforcing steel or metallic components and which are not considered as loads in the structural design. This results in the requirements for the composition of the concrete to be used, as well as the concrete covering and the permissible crack width.\n\nThe designations of the individual exposure classes are composed of the letter X (for exposure), the identification for the type of damaging influence and a number indicating the intensity of the damaging influences. The following abbreviations are used for the different types of actions:\n\n0 for Zero Risk \nC for carbonation\nD for Deicing Salt \nS for Seawater \nF for frost \nA for Chemical Attack\nM for Mechanical Abrasion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Exposition class of concrete"
+  }, {
+    "@language" : "de",
+    "@value" : "Expositionsklasse fuer Beton"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#expositionClassReinforcement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Exposure class for occurring reinforcement corrosion (XC) caused by carbonation\n\nXC1: Dry or permanently wet - indoor components with normal humidity (kitchen, bathroom in residential buildings, etc.)\n\nXC2: Wet, rarely dry - parts of water tanks, foundation components\n\nXC3: Moderate humidity - components with frequent or constant contact with the outside air (open halls), interiors with high humidity (commercial kitchens, bathrooms, laundries), in humid rooms of indoor swimming pools and livestock stables.\n\nXC4: alternating wet and dry - exterior components with direct irrigation, components in water change zones"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Exposition class of reinforcement corrosion"
+  }, {
+    "@language" : "de",
+    "@value" : "Expositionsklasse fuer Bewehrungskorrosion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#reinforcementAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#grainSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "ENUMERATION VALUES:\n\n(Classification according to DIN EN 12620)\n\nCOARSE\nFINE\nNAT_COMP_AGGR - (natural composite agregate 0/8)\nGRAIN_MIXTURE"
+  }, {
+    "@language" : "de",
+    "@value" : "WERTEVERZEICHNIS:\n\n(Definition nach DIN EN 12620)\n\nGROB \nFEIN\nZSMMNGSTZT_GESTEINSKOE - (natuerlich zusammengesetzte Gesteinskoernung 0/8)\nKORNGEMISCH"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Grain size distribution of the beton aggregate"
+  }, {
+    "@language" : "de",
+    "@value" : "Korngroesseverteilung von Gesteinskoernungen fuer Beton"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#hasBuildingMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relationship between a construction component and a BuildingMaterial."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has building material"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Baumaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/brot#aggregates"
+    }, {
+      "@id" : "https://w3id.org/bmat#hasBuildingMaterial"
+    } ]
+  }, {
+    "@list" : [ {
+      "@id" : "https://w3id.org/brot#containsComponent"
+    }, {
+      "@id" : "https://w3id.org/bmat#hasBuildingMaterial"
+    } ]
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#hasGroutingMaterial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Relationship between a Tendon component and a BuildingMaterial that is used as grouting material."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/brcomp#Tendon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has grouting material"
+  }, {
+    "@language" : "de",
+    "@value" : "hat Verpressungsmaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#hasBuildingMaterial"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#materialAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gibt das Jahr an, in dem das Material verbaut wurde."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the year in which the material was installed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Materialalter"
+  }, {
+    "@language" : "en",
+    "@value" : "material age"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#materialStandard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Gibt die Norm an, die zum Zeitpunkt des Materialeinbaus befolgt wurde."
+  }, {
+    "@language" : "en",
+    "@value" : "Specifies the standard followed at the time of material installation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bmat#BuildingMaterial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "MaterialNorm"
+  }, {
+    "@language" : "en",
+    "@value" : "material standard"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#moistureClassConcrete",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The moisture class is a classification of the environmental conditions, which the engineer must always determine according to properties and standard concrete with regard to a possible damaging alkali-silica reaction in concrete."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Feuchtigkeitsklasse fuer Betonkorrosion"
+  }, {
+    "@language" : "en",
+    "@value" : "Moisture class of beton corrosion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#concreteAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#naturalStoneAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Attribute that specifies NaturalStone."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/bmat#NaturalStone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "natural stone attribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#reinforcementAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://schema.org/#domainIncludes" : [ {
+    "@id" : "https://w3id.org/bmat#ReinforcedConcrete"
+  }, {
+    "@id" : "https://w3id.org/bmat#ReinforcementSteel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Attribute that specifies Reinforcement aggregated in ReinforcedConcrete."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "reinforcement attribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#reinforcementBreakingStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "DATENTYP DES EINGABEWERTES:\n\nxsd:double [N/mm2]"
+  }, {
+    "@language" : "en",
+    "@value" : "TYPE INPUT VALUE:\n\nxsd:double [N/mm2]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Breaking strength of reinforcing steel"
+  }, {
+    "@language" : "de",
+    "@value" : "Bruchgrenze des Bewehrungsstahls"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#reinforcementAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#reinforcementGrade",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reinforcement grade based on the tensile strength of the reinforcement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Bewehrungsklasse"
+  }, {
+    "@language" : "en",
+    "@value" : "Reinforcement grade"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#reinforcementAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#reinforcementYieldStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "DATENTYP DES EINGABEWERTES:\n\nxsd:double [N/mm2]"
+  }, {
+    "@language" : "en",
+    "@value" : "TYPE INPUT VALUE:\n\nxsd:double [N/mm2]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Streckgrenze des Bewehrungsstahls"
+  }, {
+    "@language" : "en",
+    "@value" : "Yield strength of reinforcing steel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#reinforcementAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#stoneAbrasionResistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Abrasion resistance refers to the ability of materials and structures to withstand abrasion. It is a method of wearing down or rubbing away by means of friction.\n\nUnit in [(cm^3)/(50 cm^2)]"
+  }, {
+    "@language" : "de",
+    "@value" : "Abriebfestigkeit bezieht sich auf die Fähigkeit von Materialien und Strukturen, Abrieb zu widerstehen. Es ist eine Methode des Abnutzens oder Abreibens durch Reibung.\n\nEinheit in [(cm^3)/(50 cm^2)]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Abrasion resistance"
+  }, {
+    "@language" : "de",
+    "@value" : "Abriebfestigkeit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#naturalStoneAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#stoneCompressiveStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Compressive strength is the capacity of a material or structure to withstand loads tending to reduce size.\n\nUnit in [N/mm^2]"
+  }, {
+    "@language" : "de",
+    "@value" : "Die Druckfestigkeit ist die Fähigkeit eines Materials oder einer Struktur, Belastungen zu widerstehen, die dazu neigen, die Größe zu verringern.\n\nEinheit in [N/mm^2]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Compressive strength"
+  }, {
+    "@language" : "de",
+    "@value" : "Druckfestigkeit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#naturalStoneAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#stoneDensity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Die Rohdichte, auch scheinbare oder geometrische Dichte oder Raumgewicht genannt, ist die Dichte eines porösen Festkörpers basierend auf dem Volumen einschließlich der Porenräume.\n\nEinheit in [kg/dm^3]"
+  }, {
+    "@language" : "en",
+    "@value" : "The bulk density, also called apparent or geometric density or density, is the density of a porous solid based on the volume including the pore spaces.\n\nUnit in [kg/dm^3]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Density"
+  }, {
+    "@language" : "de",
+    "@value" : "Rohdichte"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#naturalStoneAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#stoneFlexuralStrength",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Die Biegefestigkeit ist eine Materialeigenschaft, definiert als die Spannung in einem Material, kurz bevor es in einem Biegetest nachgibt.\n\nEinheit in [N/mm^2]"
+  }, {
+    "@language" : "en",
+    "@value" : "Flexural strength is a material property, defined as the stress in a material just before it yields in a flexure test.\n\nUnit in [N/mm^2]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Biegezugfestigkeit"
+  }, {
+    "@language" : "en",
+    "@value" : "Flexural strength"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#naturalStoneAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#stoneType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Natural stone types:\n\nSandstone\nLimestone\nGranite\nQuarzit\nGneiss"
+  }, {
+    "@language" : "de",
+    "@value" : "Natursteinarten:\n\nSandstein\nKalkstein\nGranit\nQuarzit\nGneis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Steinart"
+  }, {
+    "@language" : "en",
+    "@value" : "Stone type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#naturalStoneAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/bmat#stoneWaterAbsorption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "de",
+    "@value" : "Die Wasserabsorptionsrate ist eine Gewichtsänderung aufgrund von absorbiertem Wasser.\n\nEinheit in [(cm^3)/(50cm^2)]"
+  }, {
+    "@language" : "en",
+    "@value" : "Water absorption rate is change in weight due to absorbed water.\n\nUnit in [(cm^3)/(50cm^2)]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Wasseraufnahme"
+  }, {
+    "@language" : "en",
+    "@value" : "Water Absorption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/bmat#naturalStoneAttribute"
+  } ]
+}, {
+  "@id" : "https://w3id.org/brcomp#Tendon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/brot#aggregates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/brot#containsComponent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]
